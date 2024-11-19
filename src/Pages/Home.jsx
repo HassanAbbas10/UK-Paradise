@@ -1,6 +1,7 @@
 import CountdownTimer from "@/components/CountDown/CountDownTimer";
 import FreeGiveawaySection from "@/components/CountDown/FreeGiveawaySection";
 import CustomerReview from "@/components/CustomerReview/CustomerReview";
+import FaqComp from "@/components/FAQ/FaqComp";
 import Hero from "@/components/Hero/Hero";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
 import StatisticsBar from "@/components/StaticBar/StatisticsBar";
@@ -18,6 +19,7 @@ const Home = () => {
       <UpcomingCompetitions />
       <HowItWorks/>
       <CustomerReview/>
+      <FaqComp/>
     </>
   );
 };
