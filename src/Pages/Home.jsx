@@ -1,9 +1,24 @@
+import CountdownTimer from "@/components/CountDown/CountDownTimer";
+import FreeGiveawaySection from "@/components/CountDown/FreeGiveawaySection";
+import CustomerReview from "@/components/CustomerReview/CustomerReview";
+import Hero from "@/components/Hero/Hero";
+import HowItWorks from "@/components/HowItWorks/HowItWorks";
+import StatisticsBar from "@/components/StaticBar/StatisticsBar";
+import UpcomingCompetitions from "@/components/UpcomingComp/UpcomingComp";
 
 const Home = () => {
   return (
-    <div className="text-lg text-orange-400 ">
-     We are at Home 🎃
-    </div>
+    <>
+      <Hero />
+      <StatisticsBar />
+      <div className="flex justify-around items-center gap-2 mx-12 mt-5">
+        <FreeGiveawaySection />
+        <CountdownTimer />
+      </div>
+      <UpcomingCompetitions />
+      <HowItWorks/>
+      <CustomerReview/>
+    </>
   );
 };
 

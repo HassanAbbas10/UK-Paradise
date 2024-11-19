@@ -6,12 +6,14 @@ import "./App.css";
 
 
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import SecureHeader from "./components/Header/SecureHeader";
 
 const Layout = () => {
   
   return (
     <div className="app">
       <Header />
+      <SecureHeader/>
       <Outlet />
       <Footer />
     </div>
