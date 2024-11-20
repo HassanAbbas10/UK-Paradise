@@ -4,6 +4,7 @@ import CustomerReview from "@/components/CustomerReview/CustomerReview";
 import FaqComp from "@/components/FAQ/FaqComp";
 import Hero from "@/components/Hero/Hero";
 import HowItWorks from "@/components/HowItWorks/HowItWorks";
+import MailingList from "@/components/MailingList/MailingList";
 import StatisticsBar from "@/components/StaticBar/StatisticsBar";
 import UpcomingCompetitions from "@/components/UpcomingComp/UpcomingComp";
 
@@ -20,6 +21,7 @@ const Home = () => {
       <HowItWorks/>
       <CustomerReview/>
       <FaqComp/>
+      <MailingList/>
     </>
   );
 };

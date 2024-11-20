@@ -11,14 +11,14 @@ const FaqComp = () => {
 
   return (
     <Fragment>
-      <div className="container px-4 sm:px-6 md:px-8 flex flex-col justify-center items-center my-5">
-        <h1 className="text-2xl flex justify-center items-center text-black">
+      <div className="container px-8 sm:px-6 md:px-20 flex flex-col justify-center items-center my-5">
+        <h1 className="text-4xl font-bold flex justify-start items-center text-black">
           FAQ
         </h1>
         {faquestion.map((text, i) => (
           <div
-            className={`border-custom-green h-fit py-3 ${
-              index === i ? "border-blue-700 border-2 rounded-2xl" : null
+            className={`border-custom-green h-fit py-1 ${
+              index === i ? "border-blue-600 border-2 rounded-2xl" : null
             }  border-2 border-blue-700 w-full my-2  rounded-xl`}
             key={text.id}
           >
@@ -26,7 +26,7 @@ const FaqComp = () => {
               onClick={() => displayHandler(i)}
               className=" px-5 rounded-xl py-3 text-black w-full flex justify-between items-center cursor-pointer"
             >
-              <div className="text-lg">{text.questTxt}</div>
+              <div className="text-lg font-semibold">{text.questTxt}</div>
 
               <ArrowDropDownCircleIcon
                 sx={{ color: "black", fontSize: 40 }}

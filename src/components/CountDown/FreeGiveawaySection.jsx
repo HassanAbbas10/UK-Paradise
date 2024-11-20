@@ -1,35 +1,48 @@
-
-import AppleIcon from '@mui/icons-material/Apple';
-import AndroidIcon from '@mui/icons-material/Android';
+import AppleIcon from "@mui/icons-material/Apple";
+import AndroidIcon from "@mui/icons-material/Android";
 const FreeGiveawaySection = () => {
   return (
-    <div className="relative w-[40rem] bg-gradient-to-r from-blue-400 to-blue-600 py-8 flex justify-between items-center">
-      <div className="px-8 flex flex-col justify-center text-white space-y-4">
-        <h2 className="text-2xl font-bold">Free Giveaways!</h2>
-        <p className="text-lg">Download our app to enter today</p>
-        <div className="flex space-x-4">
-          <a href="#" className="flex items-center bg-black px-4 py-2 rounded-md">
-            <AppleIcon className="w-6 h-6 mr-2 text-white" />
-            <div>
-              <p className="text-sm text-white">Download on the</p>
-              <p className="text-md font-bold text-white">App Store</p>
+    <div className="w-full max-w-[768px]">
+      <div
+        className="relative overflow-hidden bg-[#00A3FF] p-8 text-white"
+        style={{
+          clipPath: "polygon(0 0, 92% 0, 100% 8%, 100% 100%, 0 100%)",
+        }}
+      >
+        <div className="flex items-center justify-between">
+          <div className="flex-1 space-y-4">
+            <h2 className="text-5xl font-bold leading-tight">
+              Free Giveaways!
+            </h2>
+            <p className="text-2xl">Download our app to enter today</p>
+            <div className="flex gap-4 pt-2">
+              <img
+                src="/placeholder.svg?height=60&width=200"
+                alt="Download on the App Store"
+                width={200}
+                height={60}
+                className="h-[60px] w-auto"
+              />
+              <img
+                src="/placeholder.svg?height=60&width=200"
+                alt="Get it on Google Play"
+                width={200}
+                height={60}
+                className="h-[60px] w-auto"
+              />
             </div>
-          </a>
-          <a href="#" className="flex items-center bg-black px-4 py-2 rounded-md">
-            <AndroidIcon className="w-6 h-6 mr-2 text-white" />
-            <div>
-              <p className="text-sm text-white">Download for</p>
-              <p className="text-md font-bold text-white">Android</p>
+          </div>
+
+          <div className="flex-shrink-0 ml-8">
+            <div className="relative w-[300px] h-[200px]">
+              <img
+                src="/placeholder.svg?height=800&width=400"
+                alt="App screenshot showing a Mercedes giveaway"
+                className="object-cover rounded-[2rem] border-[14px] border-black"
+              />
             </div>
-          </a>
+          </div>
         </div>
-      </div>
-      <div className="absolute right-8 hidden md:block">
-        <img
-          src="/path-to-your-phone-image.png"
-          alt="Mobile app"
-          className="w-60 h-auto object-contain"
-        />
       </div>
     </div>
   );
