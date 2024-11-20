@@ -10,7 +10,7 @@ const MailingList = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
-    <div className="max-w-4xl mx-auto p-8">
+    <div className="max-w-4xl -mb-14 mx-auto p-8">
       <h1 className="text-4xl font-bold text-center mb-12">Join our Mailing List</h1>
       
       {/* Using clip-path to create the angled corner */}
