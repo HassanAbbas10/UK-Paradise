@@ -5,7 +5,7 @@ import  CashDrawCard  from "../CashDrawCard";
 const UpcomingCompetitions = () =>{
   return (
     <>
-    <div className="relative overflow-hidden bg-gray-100 p-10 md:p-16 md:ml-10 md:mt-[5rem] ">
+    <div className="relative overflow-hidden bg-gray-100 p-10 md:p-16 md:ml-10 md:mt-[5rem]  ">
       <div className="absolute inset-0 flex items-center justify-center opacity-5 select-none pointer-events-none">
         <span className="text-[20vw] font-bold text-gray-300">Competitions</span>
       </div>
@@ -22,10 +22,10 @@ const UpcomingCompetitions = () =>{
           ))}
         </div>
       </div>
-      
+      <CashDrawCard/>
     </div>
     
-<CashDrawCard/>
+
     </>
   );
 }

@@ -24,7 +24,7 @@ const CashDrawCard = () => {
   }, []);
 
   return (
-    <Card className="group card w-full max-w-md mx-auto overflow-hidden p-[0.75rem] duration-700 hover:border hover:border-slate-600">
+    <Card className="group card w-full max-w-md mx-auto overflow-hidden p-[0.75rem] duration-700 hover:border hover:border-slate-600 my-10">
       <div className="relative h-48 bg-gradient-to-br from-cyan-500 to-blue-700">
         <img
           src="/placeholder.svg?height=192&width=384"
