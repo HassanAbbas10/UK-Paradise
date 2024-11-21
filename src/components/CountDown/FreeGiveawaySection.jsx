@@ -1,10 +1,11 @@
 import AppleIcon from "@mui/icons-material/Apple";
 import AndroidIcon from "@mui/icons-material/Android";
+import phone from '../../assets/images/mobile.webp'
 const FreeGiveawaySection = () => {
   return (
-    <div className="w-full max-w-[768px]">
+    <div className="w-full max-w-[624px]">
       <div
-        className="relative overflow-hidden bg-[#00A3FF] p-8 text-white"
+        className=" bg-[#00A3FF] p-8 text-white"
         style={{
           clipPath: "polygon(0 0, 92% 0, 100% 8%, 100% 100%, 0 100%)",
         }}
@@ -16,29 +17,17 @@ const FreeGiveawaySection = () => {
             </h2>
             <p className="text-2xl">Download our app to enter today</p>
             <div className="flex gap-4 pt-2">
-              <img
-                src="/placeholder.svg?height=60&width=200"
-                alt="Download on the App Store"
-                width={200}
-                height={60}
-                className="h-[60px] w-auto"
-              />
-              <img
-                src="/placeholder.svg?height=60&width=200"
-                alt="Get it on Google Play"
-                width={200}
-                height={60}
-                className="h-[60px] w-auto"
-              />
+              <AppleIcon/>
+             <AndroidIcon/>
             </div>
           </div>
 
-          <div className="flex-shrink-0 ml-8">
-            <div className="relative w-[300px] h-[200px]">
+          <div className="flex ml-8 -mt-10 ">
+            <div className=" w-48 h-64 mb-8  ">
               <img
-                src="/placeholder.svg?height=800&width=400"
+                src={phone}
                 alt="App screenshot showing a Mercedes giveaway"
-                className="object-cover rounded-[2rem] border-[14px] border-black"
+                className="object-fill rounded-[2rem] border-[14px]  border-black"
               />
             </div>
           </div>
