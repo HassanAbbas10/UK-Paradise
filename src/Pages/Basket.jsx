@@ -1,8 +1,16 @@
+import PageHeader from "@/components/PageHeader/PageHeader"
 
 
 const Basket = () => {
   return (
-    <div>Basket</div>
+    <div>
+      <PageHeader header="Basket"/>
+      <div className=" mx-auto px-4 py-8">
+        <div className="bg-blue-100 text-blue-800 p-4 rounded-md">
+          <p>Your cart is currently empty.</p>
+        </div>
+      </div>
+    </div>
   )
 }
 
