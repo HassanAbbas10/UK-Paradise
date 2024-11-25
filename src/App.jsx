@@ -7,6 +7,7 @@ import "./App.css";
 
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import SecureHeader from "./components/Header/SecureHeader";
+import Basket from "./Pages/Basket";
 
 const Layout = () => {
   
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
+      {
+        path:"basket",
+        element:<Basket/>
+      }
     
     ],
   },
