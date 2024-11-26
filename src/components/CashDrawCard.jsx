@@ -6,7 +6,7 @@ import '../Styles/Badge.css'
 import '../Styles/PrimaryCard.css'
 import '../Styles/PrimaryTimer.css'
 const CashDrawCard = () => {
-  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 5, mins: 14, secs: 39 });
+  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 8, mins: 14, secs: 39 });
   const [progress, setProgress] = useState({ value: 3376, max: 14280 });
 
   useEffect(() => {
