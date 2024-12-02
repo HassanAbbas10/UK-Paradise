@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
-import { Facebook, Instagram } from "lucide-react"
+import  {Instagram,Facebook} from "lucide-react"
+
 import Visa from "@/assets/images/visa-logo.png"
 import MasterCard from '@/assets/images/mastercard.png'
 import GooglePay from '@/assets/images/google-pay.png'
