@@ -13,13 +13,14 @@ const Header = () => {
         </div>
 
         <div className="flex flex-row gap-5 ">
-          <Link></Link>
+          <Link to="/login">
           <div className="flex justify-center items-center gap-2">
             <span className="px-1.5 py-[3px] border bg-white rounded-full">
               <PersonIcon sx={{ fontSize: 18 }} />
             </span>
             <p className="text-white font-mono">Login</p>
           </div>
+          </Link>
           <Link to="/basket">
             <div className="flex justify-center items-center gap-2">
               <span className="px-1.5 py-[3px] border bg-white rounded-full">

@@ -8,7 +8,7 @@ import "./App.css";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import SecureHeader from "./components/Header/SecureHeader";
 import Basket from "./Pages/Basket";
-
+import AuthForms from "./Pages/Auth/AuthForums";
 const Layout = () => {
   
   return (
@@ -34,7 +34,11 @@ const router = createBrowserRouter([
       {
         path:"basket",
         element:<Basket/>
-      }
+      },
+      {
+        path:"login",
+        element:<AuthForms/>
+      },
     
     ],
   },
