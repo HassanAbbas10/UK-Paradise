@@ -1,38 +1,51 @@
-import PersonIcon from "@mui/icons-material/Person";
-import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
-import { Link } from "react-router-dom";
-const Header = () => {
-  return (
-    <div>
-      <div className="flex flex-row bg-black justify-between py-5 px-5">
-        <div className="flex gap-4 justify-center items-center">
-          <div className="text-white">Paradise Logo</div>
-          <div className="text-white">Competitions</div>
-          <div className="text-white">Previous Winners</div>
-          <div className="text-white">Draw Results</div>
-        </div>
 
-        <div className="flex flex-row gap-5 ">
-          <Link to="/login">
-          <div className="flex justify-center items-center gap-2">
-            <span className="px-1.5 py-[3px] border bg-white rounded-full">
-              <PersonIcon sx={{ fontSize: 18 }} />
-            </span>
-            <p className="text-white font-mono">Login</p>
+
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { Menu, X, User, ShoppingBasket } from 'lucide-react'
+import { Button } from "@/components/ui/button"
+
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
+
+  return (
+    <header className="bg-black text-white">
+      <div className="container mx-auto px-4 py-4 md:py-5">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center">
+            <span className="text-xl font-bold mr-4">Paradise Logo</span>
+            <Button variant="ghost" size="icon" className="md:hidden" onClick={toggleMenu}>
+              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </Button>
           </div>
-          </Link>
-          <Link to="/basket">
-            <div className="flex justify-center items-center gap-2">
-              <span className="px-1.5 py-[3px] border bg-white rounded-full">
-                <ShoppingBasketIcon sx={{ fontSize: 18 }} />
+          <nav className={`${isMenuOpen ? 'block' : 'hidden'} absolute top-16 left-0 right-0 bg-black md:static md:block`}>
+            <ul className="flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-4 p-4 md:p-0">
+              <li><Link href="/competitions" className="hover:text-gray-300">Competitions</Link></li>
+              <li><Link href="/previous-winners" className="hover:text-gray-300">Previous Winners</Link></li>
+              <li><Link href="/draw-results" className="hover:text-gray-300">Draw Results</Link></li>
+            </ul>
+          </nav>
+          <div className="flex items-center space-x-4">
+            <Link href="/login" className="flex items-center hover:text-gray-300">
+              <span className="bg-white text-black rounded-full p-1 mr-2">
+                <User className="h-4 w-4" />
               </span>
-              <p className="text-white font-mono">Basket</p>
-            </div>
-          </Link>
+              <span className="hidden md:inline">Login</span>
+            </Link>
+            <Link href="/basket" className="flex items-center hover:text-gray-300">
+              <span className="bg-white text-black rounded-full p-1 mr-2">
+                <ShoppingBasket className="h-4 w-4" />
+              </span>
+              <span className="hidden md:inline">Basket</span>
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
-  );
-};
+    </header>
+  )
+}
 
-export default Header;
+export default Header
+
